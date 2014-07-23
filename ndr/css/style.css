@@ -470,6 +470,11 @@
 				padding: 3.5em 2.5em 3.5em 2.5em;
 			}
 
+			.box.transparent {
+				background-color: transparent;
+				padding: 0em;
+			}
+
 	/* Main */
 
 		.main {
