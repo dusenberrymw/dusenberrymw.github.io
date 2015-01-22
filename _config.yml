@@ -14,4 +14,4 @@ github_username:  dusenberrymw
 markdown: kramdown
 
 # Excludes
-exclude: [alpha]
+exclude: [alpha, dev.txt]
