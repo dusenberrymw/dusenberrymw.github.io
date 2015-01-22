@@ -1,2 +1,6 @@
 # Unfinished/alpha ideas
-/alpha
+alpha
+_drafts
+_site
+.sass-cache
+dev.txt

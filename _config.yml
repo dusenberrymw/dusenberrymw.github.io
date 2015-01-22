@@ -1,0 +1,17 @@
+# Site settings
+title: Mike Dusenberry
+description: > # this means to ignore newlines until "baseurl:"
+    Thoughts on computer science and medicine.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mikedusenberry.com" # the base hostname & protocol for your site
+permalink: /:title
+
+# Social media
+twitter_username: dusenberrymw
+github_username:  dusenberrymw
+
+# Build settings
+markdown: kramdown
+
+# Excludes
+exclude: [alpha]
