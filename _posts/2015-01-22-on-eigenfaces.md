@@ -16,7 +16,7 @@ style: |
 ---
 
 <div class="faces_container">
-    <img class="faces" src="{{ site.baseurl }}/assets/images/eigenfaces_sample.jpg"/>
+    <img class="faces" src="{{ site.baseurl }}/assets/images/eigenfaces_sample.jpg" alt="Eigenfaces"/>
 </div>
 
 _**Eigenfaces**_ are super interesting extensions to the concept of eigenvectors, and also serve as fascinating visualizations.  Basically, if you have a large dataset of face images, eigenfaces are a set of face-like images that collectively capture the variation in the original set of faces.  Given a subset of the eigenfaces, an original face can be encoded as relative amounts of each eigenface, and then rebuilt by adding the encoded amounts of each eigenface  together. 
@@ -27,7 +27,7 @@ Let's explore these in more detail!
 Say you have a large dataset of faces and wish to find these eigenfaces.  We'll use a [cropped version](http://conradsanderson.id.au/lfwcrop/) of the [Labeled Faces in the Wild (LFW)](http://vis-www.cs.umass.edu/lfw/) dataset that will contain 5000 example faces, each 32px by 32px (1024 pixels total per face), and saved in the grayscale format. Let's visualize the first 100 faces:
 
 <div class="faces_container">
-    <img class="faces" src="{{ site.baseurl }}/assets/images/faces_original.jpg"/>
+    <img class="faces" src="{{ site.baseurl }}/assets/images/faces_original.jpg" alt="Original Faces"/>
 </div>
 
 As stated above, each image has $$n = 1024$$ pixels, and can be stored as a vector $$x^{(i)} \in \mathbb{R}^{1024}$$.  For the $$m = 5000$$ images in our dataset, we can store all of the images in a matrix $$X \in \mathbb{R}^{5000 \times 1024}$$; one row for each image vector $$x^{(i)}$$.
@@ -90,7 +90,7 @@ As we also mentioned above, if each image is $$n$$-dimensional ($$n$$ pixels), t
 Therefore, if we visualize each $$u$$ as if it were an image, we will find that they **appear as _ghost-like faces_**.  Let's plot the top 36 eigenfaces for our dataset:
 
 <div class="faces_container">
-    <img class="faces" src="{{ site.baseurl }}/assets/images/eigenfaces.jpg"/>
+    <img class="faces" src="{{ site.baseurl }}/assets/images/eigenfaces.jpg" alt="Eigenfaces"/>
 </div>
 
 Fascinating!
@@ -118,13 +118,13 @@ $$
 Let's project our data onto $$k = 100$$ eigenfaces, and then rebuild the original faces using the eigenfaces and $$z$$ encodings for each image, resulting in the images below:
 
 <div class="faces_container">
-    <img class="faces" src="{{ site.baseurl }}/assets/images/faces_recovered.jpg"/>
+    <img class="faces" src="{{ site.baseurl }}/assets/images/faces_recovered.jpg" alt="Recovered Faces"/>
 </div>
 
 If we compare them side by side, we should see that the rebuilt images were close to the originals:
 
 <div class="faces_container">
-    <img src="{{ site.baseurl }}/assets/images/faces_comparison.jpg"/>
+    <img src="{{ site.baseurl }}/assets/images/faces_comparison.jpg" alt="Faces Comparison"/>
 </div>
 
 So, while each original image had 1024 pixels, by using only 100 eigenface encodings for each image, we were able to rebuild each image with pretty good accuracy.  Awesome!
