@@ -132,4 +132,5 @@ So, while each original image had 1024 pixels, by using only 100 eigenface encod
 ### Final thoughts
 Overall, eigenfaces are super interesting.  Hopefully this post serves as an interesting guide to them, and sparks interest into further exploration on the topic!
 
-
+### Update -- 01.25.15
+I've added demo code written in the Octave/Matlab language to go along with this post.  It will compute the eigenfaces of the face dataset and produce the visualizations as shown.  Check it out [on github](https://github.com/dusenberrymw/eigenfaces)!
