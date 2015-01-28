@@ -130,7 +130,8 @@ If we compare them side by side, we should see that the rebuilt images were clos
 So, while each original image had 1024 pixels, by using only 100 eigenface encodings for each image, we were able to rebuild each image with pretty good accuracy.  Awesome!
 
 ### Final thoughts
-Overall, eigenfaces are super interesting.  Hopefully this post serves as an interesting guide to them, and sparks interest into further exploration on the topic!
+Overall, eigenfaces are super interesting.  Hopefully this post serves as an interesting guide to them, and sparks interest into further exploration on the topic, in which case one should start with the [original paper, by Turk & Pentland](http://www.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)!
 
 ### Update -- 01.25.15
 I've added demo code written in the Octave/Matlab language to go along with this post.  It will compute the eigenfaces of the face dataset and produce the visualizations as shown.  Check it out [on github](https://github.com/dusenberrymw/eigenfaces)!
+
