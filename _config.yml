@@ -14,3 +14,7 @@ markdown: kramdown
 
 # Excludes
 exclude: [alpha, dev.txt]
+
+gems:
+    - jekyll-sitemap
+

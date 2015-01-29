@@ -4,3 +4,5 @@ _drafts
 _site
 .sass-cache
 dev.txt
+Gemfile.lock
+
