@@ -3,6 +3,7 @@ alpha
 _drafts
 _site
 .sass-cache
-dev.txt
+startBrowserSync.sh
+startJekyllBuild.sh
 Gemfile.lock
 
