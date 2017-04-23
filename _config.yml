@@ -1,6 +1,6 @@
 # Site settings
 title: Mike Dusenberry
-description: "Thoughts on computer science and medicine."
+description: "Thoughts on machine learning, computer science, and medicine."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mikedusenberry.com" # the base hostname & protocol for your site
 permalink: /:title

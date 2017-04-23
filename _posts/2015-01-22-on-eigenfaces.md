@@ -19,9 +19,9 @@ style: |
     <img class="faces" src="{{ site.baseurl }}/assets/images/eigenfaces_sample.jpg" alt="Eigenfaces"/>
 </div>
 
-_**Eigenfaces**_ are super interesting extensions to the concept of eigenvectors, and also serve as fascinating visualizations.  Basically, if you have a large dataset of face images, eigenfaces are a set of face-like images that collectively capture the variation in the original set of faces.  Given a subset of the eigenfaces, an original face can be encoded as relative amounts of each eigenface, and then rebuilt by adding the encoded amounts of each eigenface  together. 
+_**Eigenfaces**_ are super interesting extensions to the concept of eigenvectors, and also serve as fascinating visualizations.  Basically, if you have a large dataset of face images, eigenfaces are a set of face-like images that collectively capture the variation in the original set of faces.  Given a subset of the eigenfaces, an original face can be encoded as relative amounts of each eigenface, and then rebuilt by adding the encoded amounts of each eigenface  together.
 
-Let's explore these in more detail! 
+Let's explore these in more detail!
 
 ### The Dataset
 Say you have a large dataset of faces and wish to find these eigenfaces.  We'll use a [cropped version](http://conradsanderson.id.au/lfwcrop/) of the [Labeled Faces in the Wild (LFW)](http://vis-www.cs.umass.edu/lfw/) dataset that will contain 5000 example faces, each 32px by 32px (1024 pixels total per face), and saved in the grayscale format. Let's visualize the first 100 faces:
@@ -47,7 +47,7 @@ $$
     \sum_{i=1}^m u^Tx^{(i)}{x^{(i)}}^Tu                 =& \ \sigma^2 \\
     u^T \left(\sum_{i=1}^m x^{(i)}{x^{(i)}}^T \right)u  =& \ \sigma^2 \\
     u^T (X^TX)u                                         =& \ \sigma^2 \\
-    (X^TX)u                                             =& \ \sigma^2u 
+    (X^TX)u                                             =& \ \sigma^2u
 \end{aligned}
 $$
 
@@ -65,12 +65,12 @@ Notice the correlation between this definition and the rewritten equation from a
 $$
 \begin{aligned}
     Av =& \lambda v \\
-    (X^TX)u =& \sigma^2u 
+    (X^TX)u =& \sigma^2u
 \end{aligned}
 $$
 
 From this we can see that our $$X^TX$$ matrix maps to the matrix $$A$$ (and is known as the *covariance* matrix of $$X$$), $$u$$ is the eigenvector $$v$$, and the variance $$\sigma^2$$ is the eigenvalue $$\lambda$$.  So, with a bit of clever rewriting, we were able to redefine our goal in terms of eigenvectors/eigenvalues, which can be computed using existing algorithms.
- 
+
 ### Goal, continued
 With our problem redefined, we can now compute the vector $$u$$ onto which to approximate the data with the most variability by solving for the eigenvectors & eigenvalues of the covariance matrix, $$X^TX$$.  If we assume that the eigenvectors have length 1 (we assumed $$\|u\| = 1$$), then we can basically assume there will be one eigenvector per eigenvalue (technically both $$v$$ and $$-v$$ will still be valid eigenvectors with the same eigenvalue, but that's okay).  Now we have a matrix $$U$$ consisting of the $$u^1, ..., u^n$$ eigenvectors, and a matrix $$\Lambda$$ consisting of the associated $$\lambda^1, ..., \lambda^n$$ eigenvalues.
 
@@ -134,4 +134,3 @@ Overall, eigenfaces are super interesting.  Hopefully this post serves as an int
 
 ### Update -- 01.25.15
 I've added demo code written in the Octave/Matlab language to go along with this post.  It will compute the eigenfaces of the face dataset and produce the visualizations as shown.  Check it out [on github](https://github.com/dusenberrymw/eigenfaces)!
-
