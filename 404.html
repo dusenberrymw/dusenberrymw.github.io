@@ -1,0 +1,26 @@
+---
+layout: page
+title: "404"
+style: |
+    .image_container {
+        text-align:center;
+        margin-bottom: 1em;
+    }
+---
+
+<h2> Oops! This page doesn't exist! </h2>
+<div class="image_container">
+    <img class="faces" src="{{ site.baseurl }}/assets/images/404.jpg" alt="404 Page"/>
+</div>
+
+<script>
+  // Jekyll 3 no longer appends trailing slashes to permalinks, and
+  // thus older links including the slash will now break.  This simply
+  // redirects to the link without the slash, based on
+  // https://github.com/daattali/daattali.github.io/blob/master/404.html#L14-L21.
+  var url = location.href;
+  if (url.substr(url.length - 1) === '/') {
+    window.location = url.substr(0, url.length - 1);  // redirect
+  }
+</script>
+
