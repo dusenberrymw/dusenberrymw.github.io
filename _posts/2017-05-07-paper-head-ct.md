@@ -28,7 +28,7 @@ After completing my first year of medical school in 2013, I started working on a
 The following paper published in the American Journal of Emergency Medicine (AJEM) describes our work using neural networks* for a machine learning approach to this problem.
 
 <div class="center_container">
-  <h4><a href="{{ site.baseurl }}/assets/papers/paper-head_ct.pdf">Accepted Preprint</a> | <a href="https://authors.elsevier.com/a/1UnGl_GkZ8~Lgy">Published Paper (AJEM 2017)</a></h4>
+  <h4><a href="{{ site.baseurl }}/assets/papers/paper-head_ct.pdf">Accepted Preprint</a> | <a href="https://authors.elsevier.com/a/1VMAZ_GkZ8~Lgy">Published Paper (AJEM 2017)</a></h4>
 </div>
 
 \* (Note: In the paper we use the older term “artificial neural networks”, rather than the usual "neural networks", to distinguish from biological neural networks for a medically-focused reader.)
