@@ -569,6 +569,9 @@ Overall, we've explored an interesting "inverse" scenario in which the distribut
 
 On a parting note, stay curious and remember to have fun!
 
+## Notebook
+- [`mixture_density_networks.ipynb`](https://github.com/dusenberrymw/mixture-density-networks/blob/master/mixture_density_networks.ipynb)
+
 ## Great Resources
 
 1. [Pattern Recognition and Machine Learning (PRML)](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book), pp. 272-277, pp. 430-435
