@@ -9,9 +9,11 @@ style: |
     }
 ---
 
-# Mixture Density Networks
+<div class="center_container">
+  <img src="{{ site.baseurl }}/assets/mixture_density_networks_files/mixture_density_networks_32_0.png" alt="mixture density networks"/>
+</div>
 
-A _mixture density network_ (MDN) is an interesting model formalism built within the general framework of neural networks and probability theory for working on supervised learning problems in which the target variable cannot be easily approximated by a single standard probability distribution.  Essentially, an MDN allows one to model a conditional probability distribution $$p(\mathbf{y}\vert\mathbf{x})$$ as a mixture of distributions, in which the individual distributions and the corresponding mixture coefficients are parameterized by functions of the inputs $$\mathbf{x}$$.
+A _**mixture density network**_ (MDN) is an interesting model formalism built within the general framework of neural networks and probability theory for working on supervised learning problems in which the target variable cannot be easily approximated by a single standard probability distribution.  Essentially, an MDN allows one to model a conditional probability distribution $$p(\mathbf{y}\vert\mathbf{x})$$ as a mixture of distributions, in which the individual distributions and the corresponding mixture coefficients are parameterized by functions of the inputs $$\mathbf{x}$$.
 
 In this blog post, we'll explore this scenario, take a quick deep dive into the math, starting with intuitions and ending with a model and a probabilistically-derived loss function, and build an MDN for an example dataset.  As a great resource, we'll be pulling heavily from Bishop's [Pattern Recognition and Machine Learning (PRML)](https://www.microsoft.com/en-us/research/people/cmbishop/#!prml-book).
 
