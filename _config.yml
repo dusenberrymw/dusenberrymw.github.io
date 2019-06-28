@@ -13,7 +13,7 @@ github_username:  dusenberrymw
 markdown: kramdown
 
 # Excludes
-exclude: [alpha, dev.txt]
+exclude: [alpha, dev.txt, startBrowserSync.sh, startJekyllBuild.sh]
 
 gems:
     - jekyll-sitemap
